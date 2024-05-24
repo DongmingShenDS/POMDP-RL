@@ -1,0 +1,9 @@
+followed from baseline7-2
+Normalize:
+    normalized lidar distance between 0 and 1 for all lidar distance vec
+    use 1-hot to represent DFA state (set max DFA = 10 for now), use a len10 vector
+    normalized rewards:
+        - DFA accepted reward = 1/horizon, sum in [0, 1]
+        - heuristic reward = (d_{t} - d_{t-1}) / (max_delta_dist * horizon * 10), sum in [-0.1, 0.1]
+        - turn cost = 0.0001/horizon, sum in [0, 0.0001]
+        - canceled DFA change reward

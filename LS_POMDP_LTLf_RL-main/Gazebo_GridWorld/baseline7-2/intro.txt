@@ -1,0 +1,5 @@
+followed from baseline6-pure-lidar
+adding heuristics now
+    1. distance hue based on DFA next state (reach only) -> reward = (d_{t} - d_{t-1}) / step_size \in [0, 1]
+    2. DFA change to intermediate -> reward = 100 (1 time)
+    3. DFA reached & stay in accepted state -> reward = 1000

@@ -1,0 +1,12 @@
+This is similar to the first baseline, but fix-time stopping is used
+specification: reach (any) object, avoid wall
+features observation used are the same
+NO early stopping is used
+reward is cleaner:
+    if in dfa accepted state: keep getting +1
+    all other cases: keep getting 0
+temp result: PPO shows good reward during training, but not at testing (the best policy success rate 0.57) need debug
+!!! video generation is not working now...
+insight:
+    policy seems to behave better with a cleaner reward.
+    reward is very sparse, first hit is by pure luck (getting to dfa accepted).

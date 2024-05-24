@@ -1,0 +1,4 @@
+This is same with baseline1-infinite
+BUT intended to use a more complicated specification.
+specification: reach objects in order, avoid wall
+NOT TESTED

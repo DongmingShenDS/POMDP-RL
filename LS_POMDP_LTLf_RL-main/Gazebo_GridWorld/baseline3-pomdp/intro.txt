@@ -1,0 +1,3 @@
+Lidar information (observation) added
+
+NOT TESTED

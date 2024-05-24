@@ -1,0 +1,36 @@
+1. Find optimal reward by setting lambda_new=1 and lambda=0. Let this value be r* = 1.88
+-------------------------------------------------------------------------------
+ Time   |#Trial |#Backup |LBound    |UBound    |Precision  |#Alphas |#Beliefs
+-------------------------------------------------------------------------------
+ 0.53    14      1138     1.88477    1.8854     0.000634393 135      536
+-------------------------------------------------------------------------------
+
+2. Find optimal constraint by setting lambda_new=0 and lambda=1. Let this value be k* = 0.92
+-------------------------------------------------------------------------------
+ Time   |#Trial |#Backup |LBound    |UBound    |Precision  |#Alphas |#Beliefs
+-------------------------------------------------------------------------------
+ 3.16    125     1787     0.925779   0.926226   0.000446882 1463     445
+-------------------------------------------------------------------------------
+
+3. Set delta such that 1-delta is about 80% of k*
+    1-delta = k* = 0.92 * 80% = 0.736 = 0.8 ?
+    delta = 0.2
+
+4. Set B=  5r*/k*
+    B = 5r*/k* = 5*1.88/0.92 = 10.21 = 10 ?
+
+5. Instead of initializing lambda at B/2, perhaps initialize it at B/10
+    lamb0 = B/10
+
+6. hor for hyper-parameter tuning can be arbitrary. But when running the simulations for lambda update, hor should be about 5/(1-disc)
+
+PARAMETERS:
+    time_step=500
+    eta=8,  # η value in algorithm (how sensitive)
+    delta=0.2,  # δ value in algorithm
+    discount=0.99
+    precision=0.05
+    val_b=10
+
+
+AT LEAST 50

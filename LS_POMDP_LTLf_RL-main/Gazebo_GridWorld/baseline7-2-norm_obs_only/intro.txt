@@ -1,0 +1,5 @@
+followed from baseline7-2
+Normalize:
+    normalized lidar distance between 0 and 1 for all lidar distance vec
+    use 1-hot to represent DFA state (set max DFA = 10 for now), use a len10 vector
+    NOT normalized summation of rewards, ONLY normalized time-step reward in [-1, 1]

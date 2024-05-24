@@ -1,0 +1,6 @@
+observation is kind of messy now
+there are near wall detector, lidar information, etc...
+Planning to use purely LIDAR information to reduce dependency in observations.
+Also planning to use LIDAR information to determine if hit a wall.
+
+WORKING ON IT

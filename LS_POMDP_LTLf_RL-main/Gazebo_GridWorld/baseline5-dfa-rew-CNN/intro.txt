@@ -1,0 +1,3 @@
+same with baseline5-dfa-rew except:
+NO LIDAR INFORMATION given
+USE CNN as input

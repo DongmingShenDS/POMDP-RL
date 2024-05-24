@@ -1,0 +1,8 @@
+This is the first baseline we used
+specification: reach (any) object, avoid wall
+it supports two types of inputs as observations:
+    1. features only (agent location & angle, if near wall, dfa states, etc.)
+    2. image + features
+this has some early stopping (either reach irreversible dfa or accepted dfa) with some reward design
+temp result: not working
+insight: image input does not help much and is much slower to train because of the CNN

@@ -1,0 +1,8 @@
+Lidar information (observation) added
+Moving object behavior added (POMDP)
+dfa intermediate state transition get some rewards.
+
+specification: reach objects in order, avoid wall
+
+still not working.
+dfa transition happens sometimes (1 out of 10 the bast), but cannot successfully reach the final dfa accepted state

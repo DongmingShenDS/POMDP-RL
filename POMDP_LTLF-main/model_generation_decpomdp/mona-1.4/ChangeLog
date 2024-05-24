@@ -1,0 +1,54 @@
+2020-02-08 (version 1.4-18)
+  - fixes to make gcc 10 happy [Thanks to Jeff Law and Jerry James]
+  - fixes segfault at import Thanks to Ondra Lengal]
+  - updated automake files
+
+2016-03-23 (version 1.4-17)
+  - fixes to make gcc 6.0 happy [Thanks to Jerry James, Ralf Trainen, and Gaurav Gupta!]
+  - default switched from dlmalloc to built-in malloc
+
+2015-10-04 (version 1.4-16)
+  - updated autotools and build files
+
+2013-07-01 (version 1.4-15)
+  - fixed bug in Front/printline.cpp [Thanks to Rob Stanzel!]
+  - fixed memory leak in dfalib.c [Thanks to Daniel Neider!]
+
+2013-04-27 (version 1.4-14)
+  - updated autotools [Thanks yet again to Jerry James!]
+  - updated contact information
+  - fixed some compiler warnings
+
+2008-08-05 (version 1.4-13)
+  - fixed bug in basic automaton for x=y+1%z [Thanks to Stan Rosenberg!]
+
+2008-07-15 (version 1.4-12)
+  - updated RPM build script
+
+2008-05-22 (version 1.4-11)
+  - updated some static globals to make the BSD linker happy,
+    e.g. for OS X [Thanks again to Jerry James!]
+
+2008-03-07 (version 1.4-10)
+  - updated more build scripts [Thanks again to Jerry James!]
+
+2008-02-19 (version 1.4-9)
+  - updated mona-mode.el and build scripts [Thanks to Jerry James!]
+
+2007-03-06 (version 1.4-8)
+  - tiny fix to make it compile with gcc 4
+  - now also compiles for 64-bit architectures
+  - upgraded to newest dlmalloc
+
+2004-07-05 (version 1.4-7)
+  - fixed bug in formula reductions (double negation)
+
+2004-06-28 (version 1.4-6)
+  - fixed bug in the GTA SetMinus automaton construction
+
+2003-03-23 (version 1.4-5)
+  - now compiles with gcc 3.1.1 without warnings
+
+2002-11-05 (version 1.4-4)
+  - now using automake+autoconf
+  - various minor compiler warnings fixed
